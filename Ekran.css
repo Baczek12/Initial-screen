@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(38, 37, 37);
+    
+}
+
+.Initial{  
+    display:flex;
+    justify-content: center;
+    align-items: center ;
+    min-height: 100vh;
+    font-family: cursive, Bush Script MT;   
+}
+
+h1{
+    font-size: 10rem;
+    word-spacing: normal;
+    background: linear-gradient(to right,rgb(47, 7, 89) , rgb(7, 4, 98));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count:4;
+    animation-direction: alternate;
+    animation-timing-function:ease-in;
+    animation-fill-mode:backwards;
+    
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity:0.25;
+    }
+    50%{
+        opacity:0.5;
+    }
+    75%{
+        opacity:0.75;
+    }
+    100%{
+        opacity:1;
+    }
+    
+}
+
